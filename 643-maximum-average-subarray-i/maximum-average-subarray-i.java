@@ -6,7 +6,7 @@ class Solution {
             res = res + nums[i];
         } 
         maxi = res;
-        for(int i = 1;i <= nums.length-k;i++){
+        for(int i = 1;i < nums.length-k+1;i++){
             res = res - nums[i-1] + nums[i+k-1];
 
             if(res > maxi){
