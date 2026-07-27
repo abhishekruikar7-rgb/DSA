@@ -10,7 +10,6 @@ class Solution {
                 lon = Math.max(lon,r-l+1);
             }
             else{
-                
                 r++;
                 l = r;
             }
