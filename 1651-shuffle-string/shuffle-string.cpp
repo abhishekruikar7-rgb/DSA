@@ -1,7 +1,7 @@
 class Solution {
 public:
     string restoreString(string s, vector<int>& indices) {
-        vector<pair<int,int>> ans;
+        /*vector<pair<int,int>> ans;
 
         for(int i = 0;i < indices.size();i++){
             ans.push_back({indices[i],s[i]});
@@ -11,6 +11,14 @@ public:
         for(int i = 0;i < ans.size();i++){
             a.push_back(ans[i].second);
         }
-        return a;
+        return a; */
+
+        string ans = s;
+        for(int i = 0;i < s.size();i++){
+            ans[indices[i]] = s[i];
+        }
+        return ans;
+
+    
     }
 };
