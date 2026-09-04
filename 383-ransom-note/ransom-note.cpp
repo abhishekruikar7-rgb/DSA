@@ -6,13 +6,10 @@ public:
             mp[i]++;
         }
         for(int i = 0;i < r.size();i++){
-            if(mp[r[i]] > 0){
-                mp[r[i]]--;
-            }
-            else{
+            if(mp[r[i]] == 0){
                 return false;
             }
-            
+            mp[r[i]]--;
         }
         return true;
     }
